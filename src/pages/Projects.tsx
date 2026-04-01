@@ -220,7 +220,7 @@ const Projects = () => {
               return (
                 <Card
                   key={project.title}
-                  className="group relative overflow-hidden border border-slate-200 dark:border-0 bg-white/80 dark:bg-gradient-to-br dark:from-slate-800/50 dark:to-slate-900/70 backdrop-blur-xl rounded-2xl md:rounded-3xl shadow-xl hover:shadow-2xl dark:shadow-xl dark:md:shadow-2xl transition-all duration-700 animate-card-enter hover:scale-[1.01] md:hover:scale-[1.02] mx-2"
+                  className="group relative overflow-hidden border border-slate-200 dark:border-0 bg-white/80 dark:bg-transparent dark:bg-gradient-to-br dark:from-slate-800/50 dark:to-slate-900/70 backdrop-blur-xl rounded-2xl md:rounded-3xl shadow-xl hover:shadow-2xl dark:shadow-xl dark:md:shadow-2xl transition-all duration-700 animate-card-enter hover:scale-[1.01] md:hover:scale-[1.02] mx-2"
                   style={{ 
                     animationDelay: `${index * 0.2}s`,
                     animationDuration: '0.8s'
