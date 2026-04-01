@@ -185,30 +185,30 @@ const Projects = () => {
       <main className="pt-24 md:pt-32 pb-12 md:pb-20 px-4 sm:px-6 relative overflow-hidden">
         {/* Enhanced Geometric Background */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
-          <div className="absolute top-20 left-4 md:left-10 w-16 h-16 md:w-32 md:h-32 border-2 border-cyan-400/30 rotate-45 animate-spin-slow"></div>
-          <div className="absolute bottom-20 right-4 md:right-10 w-12 h-12 md:w-24 md:h-24 border-2 border-pink-400/30 rounded-full animate-bounce-medium"></div>
-          <div className="absolute top-1/2 left-1/4 w-8 h-8 md:w-16 md:h-16 border-2 border-green-400/30 rotate-12 animate-ping-slow"></div>
-          <div className="absolute top-40 right-10 md:right-20 w-0 h-0 border-l-[12px] md:border-l-[20px] border-l-transparent border-r-[12px] md:border-r-[20px] border-r-transparent border-b-[20px] md:border-b-[35px] border-b-blue-400/20 animate-float-random-1"></div>
-          <div className="absolute bottom-40 left-10 md:left-20 w-0 h-0 border-l-[10px] md:border-l-[15px] border-l-transparent border-r-[10px] md:border-r-[15px] border-r-transparent border-t-[15px] md:border-t-[25px] border-t-purple-400/20 animate-float-random-2"></div>
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:30px_30px] md:bg-[size:50px_50px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-purple-50 to-slate-50 dark:from-slate-900 dark:via-purple-900 dark:to-slate-900 transition-colors duration-500"></div>
+          <div className="absolute top-20 left-4 md:left-10 w-16 h-16 md:w-32 md:h-32 border-2 border-cyan-500/30 dark:border-cyan-400/30 rotate-45 animate-spin-slow transition-colors duration-500"></div>
+          <div className="absolute bottom-20 right-4 md:right-10 w-12 h-12 md:w-24 md:h-24 border-2 border-pink-500/30 dark:border-pink-400/30 rounded-full animate-bounce-medium transition-colors duration-500"></div>
+          <div className="absolute top-1/2 left-1/4 w-8 h-8 md:w-16 md:h-16 border-2 border-green-500/30 dark:border-green-400/30 rotate-12 animate-ping-slow transition-colors duration-500"></div>
+          <div className="absolute top-40 right-10 md:right-20 w-0 h-0 border-l-[12px] md:border-l-[20px] border-l-transparent border-r-[12px] md:border-r-[20px] border-r-transparent border-b-[20px] md:border-b-[35px] border-b-blue-500/20 dark:border-b-blue-400/20 animate-float-random-1 transition-colors duration-500"></div>
+          <div className="absolute bottom-40 left-10 md:left-20 w-0 h-0 border-l-[10px] md:border-l-[15px] border-l-transparent border-r-[10px] md:border-r-[15px] border-r-transparent border-t-[15px] md:border-t-[25px] border-t-purple-500/20 dark:border-t-purple-400/20 animate-float-random-2 transition-colors duration-500"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.05)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:30px_30px] md:bg-[size:50px_50px]"></div>
         </div>
 
         <div className="container mx-auto max-w-7xl">
           {/* Enhanced Header */}
           <div className="text-center mb-12 md:mb-16 px-2 animate-glow-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 mb-6 md:mb-8">
-              <Rocket className="h-4 w-4 md:h-5 md:w-5 text-cyan-400 animate-bounce" />
-              <span className="text-cyan-400 font-semibold text-xs md:text-sm">Project Portfolio</span>
-              <Sparkles className="h-4 w-4 md:h-5 md:w-5 text-cyan-400 animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl bg-black/5 dark:bg-white/5 backdrop-blur-md border border-black/10 dark:border-white/10 mb-6 md:mb-8 transition-colors duration-500">
+              <Rocket className="h-4 w-4 md:h-5 md:w-5 text-cyan-600 dark:text-cyan-400 animate-bounce transition-colors duration-500" />
+              <span className="text-cyan-700 dark:text-cyan-400 font-semibold text-xs md:text-sm transition-colors duration-500">Project Portfolio</span>
+              <Sparkles className="h-4 w-4 md:h-5 md:w-5 text-cyan-600 dark:text-cyan-400 animate-pulse transition-colors duration-500" />
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 animate-text-shine leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 dark:from-cyan-400 dark:via-purple-400 dark:to-pink-400 animate-text-shine leading-tight transition-colors duration-500">
               PROJECTS
             </h1>
-            <div className="w-20 md:w-32 h-0.5 md:h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-4 md:mb-6 animate-width-grow"></div>
-            <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed px-2">
-              A curated collection of my work showcasing <span className="text-cyan-400 font-semibold">technical expertise</span> and {" "}
-              <span className="text-purple-400 font-semibold">innovative solutions</span> across various domains
+            <div className="w-20 md:w-32 h-0.5 md:h-1 bg-gradient-to-r from-cyan-600 to-purple-600 dark:from-cyan-400 dark:to-purple-400 mx-auto mb-4 md:mb-6 animate-width-grow transition-colors duration-500"></div>
+            <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed px-2 transition-colors duration-500">
+              A curated collection of my work showcasing <span className="text-cyan-600 dark:text-cyan-400 font-semibold transition-colors duration-500">technical expertise</span> and {" "}
+              <span className="text-purple-600 dark:text-purple-400 font-semibold transition-colors duration-500">innovative solutions</span> across various domains
             </p>
           </div>
 
@@ -220,14 +220,14 @@ const Projects = () => {
               return (
                 <Card
                   key={project.title}
-                  className="group relative overflow-hidden border-0 bg-gradient-to-br from-slate-800/50 to-slate-900/70 backdrop-blur-xl rounded-2xl md:rounded-3xl shadow-xl md:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-700 animate-card-enter hover:scale-[1.01] md:hover:scale-[1.02] mx-2"
+                  className="group relative overflow-hidden border border-slate-200 dark:border-0 bg-white/80 dark:bg-gradient-to-br dark:from-slate-800/50 dark:to-slate-900/70 backdrop-blur-xl rounded-2xl md:rounded-3xl shadow-xl hover:shadow-2xl dark:shadow-xl dark:md:shadow-2xl transition-all duration-700 animate-card-enter hover:scale-[1.01] md:hover:scale-[1.02] mx-2"
                   style={{ 
                     animationDelay: `${index * 0.2}s`,
                     animationDuration: '0.8s'
                   }}
                 >
                   {/* Background Pattern */}
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]"></div>
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.05),transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)] transition-colors duration-500"></div>
                   
                   <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0">
                     {/* Left Column - Image */}
@@ -311,35 +311,35 @@ const Projects = () => {
                         {/* Header */}
                         <div>
                           <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
-                            <div className="flex items-center gap-1 md:gap-2 px-2 py-1 md:px-3 md:py-1 bg-slate-700/50 rounded-full border border-slate-600/50">
+                            <div className="flex items-center gap-1 md:gap-2 px-2 py-1 md:px-3 md:py-1 bg-slate-100 dark:bg-slate-700/50 rounded-full border border-slate-200 dark:border-slate-600/50 transition-colors duration-500">
                               {getCategoryIcon(project.category)}
-                              <span className="text-xs md:text-sm text-slate-300 font-medium">{project.category}</span>
+                              <span className="text-xs md:text-sm text-slate-700 dark:text-slate-300 font-medium transition-colors duration-500">{project.category}</span>
                             </div>
                           </div>
                           
-                          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-500 mb-2 md:mb-3 leading-tight">
+                          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 dark:text-white group-hover:text-transparent dark:group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-600 group-hover:to-purple-600 dark:group-hover:from-cyan-400 dark:group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-500 mb-2 md:mb-3 leading-tight">
                             {project.title}
                           </h2>
                           
-                          <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+                          <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed transition-colors duration-500">
                             {project.description}
                           </p>
                         </div>
 
                         {/* Features Section */}
                         <div>
-                          <h3 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4 flex items-center gap-2">
-                            <Zap className="h-4 w-4 md:h-5 md:w-5 text-cyan-400" />
+                          <h3 className="text-base md:text-lg font-semibold text-slate-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2 transition-colors duration-500">
+                            <Zap className="h-4 w-4 md:h-5 md:w-5 text-cyan-600 dark:text-cyan-400 transition-colors duration-500" />
                             Key Features
                           </h3>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
                             {project.features.slice(0, 4).map((feature, idx) => (
                               <div 
                                 key={feature}
-                                className="flex items-start gap-2 md:gap-3 p-2 md:p-3 bg-slate-800/30 rounded-lg md:rounded-xl group/feature hover:bg-slate-700/40 transition-all duration-300 border border-slate-700/50 hover:border-cyan-400/20"
+                                className="flex items-start gap-2 md:gap-3 p-2 md:p-3 bg-slate-50 dark:bg-slate-800/30 rounded-lg md:rounded-xl group/feature hover:bg-slate-100 dark:hover:bg-slate-700/40 transition-all duration-300 border border-slate-200 dark:border-slate-700/50 hover:border-cyan-600/20 dark:hover:border-cyan-400/20"
                               >
-                                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-cyan-400 rounded-full mt-1.5 md:mt-2 group-hover/feature:scale-150 group-hover/feature:bg-purple-400 transition-all duration-300 flex-shrink-0"></div>
-                                <span className="text-xs md:text-sm text-slate-300 flex-1 leading-relaxed">{feature}</span>
+                                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-cyan-600 dark:bg-cyan-400 rounded-full mt-1.5 md:mt-2 group-hover/feature:scale-150 group-hover/feature:bg-purple-600 dark:group-hover/feature:bg-purple-400 transition-all duration-300 flex-shrink-0"></div>
+                                <span className="text-xs md:text-sm text-slate-700 dark:text-slate-300 flex-1 leading-relaxed transition-colors duration-500">{feature}</span>
                               </div>
                             ))}
                           </div>
@@ -347,15 +347,15 @@ const Projects = () => {
 
                         {/* Tech Stack */}
                         <div>
-                          <h3 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4 flex items-center gap-2">
-                            <Palette className="h-4 w-4 md:h-5 md:w-5 text-purple-400" />
+                          <h3 className="text-base md:text-lg font-semibold text-slate-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2 transition-colors duration-500">
+                            <Palette className="h-4 w-4 md:h-5 md:w-5 text-purple-600 dark:text-purple-400 transition-colors duration-500" />
                             Technology Stack
                           </h3>
                           <div className="flex flex-wrap gap-2 md:gap-3">
                             {project.tech.slice(0, 4).map((tech, techIndex) => (
                               <Badge
                                 key={tech}
-                                className="px-2 py-1 md:px-4 md:py-2 rounded-lg md:rounded-xl bg-slate-700/50 border border-slate-600 text-slate-200 hover:scale-105 hover:bg-slate-600/50 transition-all duration-300 hover:shadow-lg hover:border-cyan-400/30 group/tech backdrop-blur-sm text-xs md:text-sm"
+                                className="px-2 py-1 md:px-4 md:py-2 rounded-lg md:rounded-xl bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:scale-105 hover:bg-slate-200 dark:hover:bg-slate-600/50 transition-all duration-300 hover:shadow-lg hover:border-cyan-600/30 dark:hover:border-cyan-400/30 group/tech backdrop-blur-sm text-xs md:text-sm"
                                 style={{ 
                                   animationDelay: `${techIndex * 0.1}s`,
                                   animation: 'tech-badge-enter 0.5s ease-out forwards'
@@ -366,7 +366,7 @@ const Projects = () => {
                               </Badge>
                             ))}
                             {project.tech.length > 4 && (
-                              <Badge className="px-2 py-1 md:px-4 md:py-2 rounded-lg md:rounded-xl bg-slate-700/50 border border-slate-600 text-slate-200 text-xs md:text-sm">
+                              <Badge className="px-2 py-1 md:px-4 md:py-2 rounded-lg md:rounded-xl bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-xs md:text-sm transition-colors duration-500">
                                 +{project.tech.length - 4} more
                               </Badge>
                             )}
@@ -377,7 +377,7 @@ const Projects = () => {
                         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-3 md:pt-4">
                           <Button
                             size="lg"
-                            className="flex-1 bg-slate-700/50 border border-slate-600 text-slate-200 hover:bg-slate-600/70 hover:border-cyan-400/50 hover:text-white group/btn transition-all duration-300 hover:scale-105 backdrop-blur-sm text-sm md:text-base"
+                            className="flex-1 bg-white dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-600/70 hover:border-cyan-600/50 dark:hover:border-cyan-400/50 hover:text-slate-900 dark:hover:text-white group/btn transition-all duration-300 hover:scale-105 backdrop-blur-sm text-sm md:text-base"
                             asChild
                           >
                             <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -389,7 +389,7 @@ const Projects = () => {
                             <DialogTrigger asChild>
                               <Button
                                 size="lg"
-                                className="flex-1 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white shadow-lg hover:shadow-xl group/btn transition-all duration-300 hover:scale-105 backdrop-blur-sm text-sm md:text-base"
+                                className="flex-1 bg-gradient-to-r from-cyan-600 to-purple-600 dark:from-cyan-500 dark:to-purple-500 hover:from-cyan-700 hover:to-purple-700 dark:hover:from-cyan-600 dark:hover:to-purple-600 text-white shadow-lg hover:shadow-xl group/btn transition-all duration-300 hover:scale-105 backdrop-blur-sm text-sm md:text-base"
                               >
                                 <Play className="h-4 w-4 md:h-5 md:w-5 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
                                 Live Demo
@@ -487,14 +487,14 @@ const Projects = () => {
                   </div>
 
                   {/* Enhanced Hover Effects */}
-                  <div className="absolute inset-0 rounded-2xl md:rounded-3xl border-2 border-transparent group-hover:border-cyan-500/30 transition-all duration-500 pointer-events-none"></div>
-                  <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-2 h-2 md:w-4 md:h-4 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 delay-100"></div>
-                  <div className="absolute -bottom-1 -left-1 md:-bottom-2 md:-left-2 w-3 h-3 md:w-6 md:h-6 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 delay-200"></div>
+                  <div className="absolute inset-0 rounded-2xl md:rounded-3xl border-2 border-transparent group-hover:border-cyan-600/30 dark:group-hover:border-cyan-500/30 transition-all duration-500 pointer-events-none"></div>
+                  <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-2 h-2 md:w-4 md:h-4 bg-cyan-600 dark:bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 delay-100"></div>
+                  <div className="absolute -bottom-1 -left-1 md:-bottom-2 md:-left-2 w-3 h-3 md:w-6 md:h-6 bg-purple-600 dark:bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 delay-200"></div>
                   
                   {/* Progress Bar for In Progress Projects */}
                   {project.status === "In Progress" && (
-                    <div className="absolute bottom-0 left-0 w-full h-1 md:h-2 bg-slate-700">
-                      <div className="h-full bg-gradient-to-r from-cyan-500 to-purple-500 animate-pulse rounded-b-2xl md:rounded-b-3xl" style={{ width: '65%' }}></div>
+                    <div className="absolute bottom-0 left-0 w-full h-1 md:h-2 bg-slate-200 dark:bg-slate-700 transition-colors duration-500">
+                      <div className="h-full bg-gradient-to-r from-cyan-600 to-purple-600 dark:from-cyan-500 dark:to-purple-500 animate-pulse rounded-b-2xl md:rounded-b-3xl transition-colors duration-500" style={{ width: '65%' }}></div>
                     </div>
                   )}
                 </Card>
@@ -504,19 +504,19 @@ const Projects = () => {
 
           {/* Enhanced Call to Action */}
           <div className="text-center mt-12 md:mt-16 px-2 animate-fade-in-up">
-            <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-xl md:rounded-2xl p-6 md:p-8 max-w-2xl mx-auto border border-cyan-500/20 backdrop-blur-xl relative overflow-hidden">
+            <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-xl md:rounded-2xl p-6 md:p-8 max-w-2xl mx-auto border border-cyan-500/20 dark:border-cyan-500/20 backdrop-blur-xl relative overflow-hidden transition-colors duration-500">
               <div className="absolute -top-6 -right-6 md:-top-10 md:-right-10 w-12 h-12 md:w-20 md:h-20 bg-cyan-400/10 rounded-full blur-xl"></div>
               <div className="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 w-12 h-12 md:w-20 md:h-20 bg-purple-400/10 rounded-full blur-xl"></div>
-              <Sparkles className="h-8 w-8 md:h-12 md:w-12 text-cyan-400 mx-auto mb-3 md:mb-4 animate-pulse relative z-10" />
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 relative z-10">
+              <Sparkles className="h-8 w-8 md:h-12 md:w-12 text-cyan-600 dark:text-cyan-400 mx-auto mb-3 md:mb-4 animate-pulse relative z-10 transition-colors duration-500" />
+              <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-2 md:mb-3 relative z-10 transition-colors duration-500">
                 Interested in Collaboration?
               </h3>
-              <p className="text-slate-300 text-sm md:text-base mb-4 md:mb-6 relative z-10">
+              <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base mb-4 md:mb-6 relative z-10 transition-colors duration-500">
                 Let's work together to bring your innovative ideas to life with cutting-edge technology
               </p>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white shadow-xl hover:shadow-2xl group transition-all duration-300 hover:scale-105 relative z-10 text-sm md:text-base"
+                className="bg-gradient-to-r from-cyan-600 to-purple-600 dark:from-cyan-500 dark:to-purple-500 hover:from-cyan-700 hover:to-purple-700 dark:hover:from-cyan-600 dark:hover:to-purple-600 text-white shadow-xl hover:shadow-2xl group transition-all duration-300 hover:scale-105 relative z-10 text-sm md:text-base"
                 onClick={() => navigate("/contact")}
               >
                 Start a Conversation
