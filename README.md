@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# Personal Portfolio
 
-## Project info
+This is my personal portfolio website where I showcase my projects, skills, and experience as a developer.
 
-**URL**: https://lovable.dev/projects/3a845b42-cf67-41aa-92bc-506c3e4ab772
+## Live Demo
 
-## How can I edit this code?
+https://your-portfolio-link.vercel.app
 
-There are several ways of editing your application.
+## About the Project
 
-**Use Lovable**
+I built this portfolio to have a simple and clean way to present my work. It includes the projects I’ve worked on, the technologies I use, and some basic information about me.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3a845b42-cf67-41aa-92bc-506c3e4ab772) and start prompting.
+The goal was to keep the design modern, responsive, and easy to navigate.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+* Responsive design (works on mobile, tablet, desktop)
+* Dark mode / Light mode toggle
+* Projects section with descriptions
+* Experience section
+* Resume download
+* Contact section
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
 
-Follow these steps:
+## Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```
+src/
+  components/
+  pages/
+  hooks/
+  lib/
+  App.tsx
+  main.tsx
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## How to Run Locally
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/Nivethan26/portfolio.git
+cd portfolio
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The project is deployed on Vercel.
 
-## What technologies are used for this project?
+## Contact
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3a845b42-cf67-41aa-92bc-506c3e4ab772) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+* LinkedIn: www.linkedin.com/in/nivethan-selvaratnam-4b9252212
+* Email: [nivethan.nivethan26@gmail.com](mailto:nivethan.nivethan26@gmail.com)
