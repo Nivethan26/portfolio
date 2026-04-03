@@ -377,11 +377,11 @@ const Projects = () => {
                         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-3 md:pt-4">
                           <Button
                             size="lg"
-                            className="flex-1 bg-white dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-600/70 hover:border-cyan-600/50 dark:hover:border-cyan-400/50 hover:text-slate-900 dark:hover:text-white group/btn transition-all duration-300 hover:scale-105 backdrop-blur-sm text-sm md:text-base"
+                            className="flex-1 py-3 md:py-0 h-auto md:h-11 bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800 bg-[length:200%_auto] hover:bg-[position:right_center] border border-slate-600/50 hover:border-slate-500 text-white shadow-lg hover:shadow-xl group/btn transition-all duration-500 hover:scale-105 backdrop-blur-sm text-sm md:text-base font-medium"
                             asChild
                           >
                             <a href={project.github} target="_blank" rel="noopener noreferrer">
-                              <Github className="h-4 w-4 md:h-5 md:w-5 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
+                              <Github className="h-4 w-4 md:h-5 md:w-5 mr-2 group-hover/btn:rotate-12 group-hover/btn:scale-110 transition-all duration-300" />
                               Source Code
                             </a>
                           </Button>
@@ -389,7 +389,7 @@ const Projects = () => {
                             <DialogTrigger asChild>
                               <Button
                                 size="lg"
-                                className="flex-1 bg-gradient-to-r from-cyan-600 to-purple-600 dark:from-cyan-500 dark:to-purple-500 hover:from-cyan-700 hover:to-purple-700 dark:hover:from-cyan-600 dark:hover:to-purple-600 text-white shadow-lg hover:shadow-xl group/btn transition-all duration-300 hover:scale-105 backdrop-blur-sm text-sm md:text-base"
+                                className="flex-1 py-3 md:py-0 h-auto md:h-11 bg-gradient-to-r from-cyan-600 to-purple-600 dark:from-cyan-500 dark:to-purple-500 hover:from-cyan-700 hover:to-purple-700 dark:hover:from-cyan-600 dark:hover:to-purple-600 text-white shadow-lg hover:shadow-xl group/btn transition-all duration-300 hover:scale-105 backdrop-blur-sm text-sm md:text-base font-medium w-full sm:w-auto"
                               >
                                 <Play className="h-4 w-4 md:h-5 md:w-5 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
                                 Live Demo
