@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Github, Linkedin, Mail, Send, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -19,11 +20,11 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Basic validation
+
+    // Validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Error",
@@ -34,7 +35,6 @@ const Contact = () => {
       return;
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast({
@@ -46,16 +46,52 @@ const Contact = () => {
       return;
     }
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+      await emailjs.send(
+        "service_175dv0k",      
+        "template_k0ks60b",     
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject || "No Subject",
+          message: formData.message,
+        },
+        "LE6-NfUaeON7XN0SD"    
+      );
 
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
+      await emailjs.send(
+        "service_175dv0k",
+        "template_6iwk6ja",
+        {
+          name: formData.name,
+          email: formData.email,
+        },
+        "LE6-NfUaeON7XN0SD"
+      );
 
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" });
+      toast({
+        title: "Message Sent! 🎉",
+        description: "Your message has been delivered successfully.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+    } catch (error) {
+      console.error(error);
+
+      toast({
+        title: "Error ❌",
+        description: "Failed to send email. Please try again.",
+        variant: "destructive",
+      });
+    }
+
     setIsSubmitting(false);
   };
 
