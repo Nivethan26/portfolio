@@ -4,7 +4,7 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 
 ## Live Demo
 
-https://your-portfolio-link.vercel.app
+https://nivethan-selvaratnam.vercel.app
 
 ## About the Project
 
