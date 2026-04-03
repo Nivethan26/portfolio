@@ -410,7 +410,7 @@ const Projects = () => {
                                       : project.title === "Food Recipe Platform"
                                       ? "/foodrecipe-demo.mp4"
                                       : project.title === "Weather App"
-                                      ? "/Weather App.mp4"
+                                      ? "/demo/Weather App.mp4"
                                       : ""
                                   }
                                   controls
@@ -447,7 +447,7 @@ const Projects = () => {
                                         : project.title === "Food Recipe Platform"
                                         ? "/foodrecipe-demo.mp4"
                                         : project.title === "Weather App"
-                                        ? "/Weather App.mp4"
+                                        ? "/demo/Weather App.mp4"
                                         : "";
                                       
                                       if (videoUrl) {
